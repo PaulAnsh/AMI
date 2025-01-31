@@ -1,7 +1,7 @@
 packer { 
     required_plugins {
         amazon = {
-            version = ">= 2.0.0"
+            version = "~> 1"
             source  = "github.com/hashicorp/amazon"
         }
     }
@@ -48,7 +48,7 @@ build {
     }
 
     provisioner "file" {
-        source      = "/Users/ansh/Documents/VS code/AMI/Linux/aws-cli.sh"
+        source      = "/Users/ansh/Documents/VS code/AMI/aws-cli.sh"
         destination = "/tmp/aws-cli.sh"
     }
 }
